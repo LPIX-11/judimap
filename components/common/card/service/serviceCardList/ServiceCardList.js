@@ -4,10 +4,10 @@ import DesktopServiceCardListView from "./views/DesktopServiceCardListView";
 export default function ServiceCardList() {
   return (
     <MediaContextProvider>
-      <Media greaterThanOrEqual={'lg'}>
+      <Media greaterThanOrEqual={'xl'}>
         <DesktopServiceCardListView />
       </Media>
-      <Media lessThan={'lg'}>
+      <Media lessThan={'xl'}>
 
       </Media>
     </MediaContextProvider>

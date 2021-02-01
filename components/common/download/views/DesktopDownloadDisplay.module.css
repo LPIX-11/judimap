@@ -1,0 +1,10 @@
+.wrapper {
+  perspective: 1000px;
+  margin: 0 1em auto 0;
+  width: 26em;
+}
+
+.inner {
+  transition: .3s;
+  transform: rotateY(40deg);
+}

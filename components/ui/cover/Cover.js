@@ -7,10 +7,10 @@ import MobileCoverView from "./views/MobileCoverView";
 export default function Cover() {
   return (
     <MediaContextProvider>
-      <Media greaterThanOrEqual={'lg'}>
+      <Media greaterThanOrEqual={'xl'}>
         <DesktopCoverView />
       </Media>
-      <Media lessThan={'lg'}>
+      <Media lessThan={'xl'}>
         <MobileCoverView />
       </Media>
     </MediaContextProvider>

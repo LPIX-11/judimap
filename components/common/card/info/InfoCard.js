@@ -6,10 +6,10 @@ export default function InfoCard(props) {
   return (
     <>
       <MediaContextProvider>
-        <Media greaterThanOrEqual={'lg'}>
+        <Media greaterThanOrEqual={'xl'}>
           <DesktopInfoCardView {...props} />
         </Media>
-        <Media lessThan={'lg'}>
+        <Media lessThan={'xl'}>
           <MobileInfoCardView {...props} />
         </Media>
       </MediaContextProvider>

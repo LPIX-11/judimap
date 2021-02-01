@@ -5,10 +5,10 @@ import MobileInfoCardListView from "./views/MobileInfoCardListView";
 export default function InfoCardList() {
   return (
     <MediaContextProvider>
-      <Media greaterThanOrEqual={'lg'}>
+      <Media greaterThanOrEqual={'xl'}>
         <DesktopInfoCardListView />
       </Media>
-      <Media lessThan={'lg'}>
+      <Media lessThan={'xl'}>
         <MobileInfoCardListView />
       </Media>
     </MediaContextProvider>

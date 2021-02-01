@@ -1,6 +1,7 @@
 const withAssetsManifest = require('next-assets-manifest');
 
 module.exports = withAssetsManifest({
+  target: 'serverless',
   // These options are used for both client and server manifest plugins.
   assetsManifest: {
     done(manifest) {

@@ -10,11 +10,11 @@ export default function Card3D({ right, title, description }) {
             <div className={'bg-dark position-absolute'} style={{ height: '100%', width: '100%', opacity: .4 }}></div>
             <Card.Img src="/black_lawyer.jpg" alt="Card image" />
             <Card.ImgOverlay>
-              <Card.Title as={'h3'}>Notre Stratégie</Card.Title>
+              {/* <Card.Title as={'h3'}>Notre Stratégie</Card.Title>
               <Card.Text style={{ color: '#000', fontFamily: 'Poppins Regular' }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              </Card.Text>
+              </Card.Text> */}
               <Card.Text>JudiMap Orientation</Card.Text>
             </Card.ImgOverlay>
           </Card>

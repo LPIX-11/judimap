@@ -1,5 +1,6 @@
 import { Flex, Heading, Image } from "@chakra-ui/react";
 import { useEffect } from "react";
+import { Button } from "react-bootstrap";
 import { FiChevronDown } from "react-icons/fi";
 
 import coverStyle from '../Cover.module.css'
@@ -47,19 +48,19 @@ export default function DesktopCoverView() {
   };
 
   useEffect(() => {
-    var elements = document.getElementsByClassName(coverStyle.typewrite);
-    for (var i = 0; i < elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      console.log(toRotate);
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.innerHTML = `${coverStyle.typewrite} > .wrap { border-right: 0.08em solid #fff}`;
-    document.body.appendChild(css);
+    // var elements = document.getElementsByClassName(coverStyle.typewrite);
+    // for (var i = 0; i < elements.length; i++) {
+    //   var toRotate = elements[i].getAttribute('data-type');
+    //   console.log(toRotate);
+    //   var period = elements[i].getAttribute('data-period');
+    //   if (toRotate) {
+    //     new TxtType(elements[i], JSON.parse(toRotate), period);
+    //   }
+    // }
+    // // INJECT CSS
+    // var css = document.createElement("style");
+    // css.innerHTML = `${coverStyle.typewrite} > .wrap { border-right: 0.08em solid #fff}`;
+    // document.body.appendChild(css);
 
   }, []);
 
@@ -68,16 +69,18 @@ export default function DesktopCoverView() {
 
       <div className={coverStyle.left} style={{ zIndex: 1 }}>
         <Flex className={'position-relative pl-5'} direction={'column'} w={'60vw'} h={'80vh'} bg={'transparent'} align={'start'} justify={'center'}>
-          <Heading color={'#FFF'} as={'h1'} size={'lg'}>JudiMap</Heading>
-          <Heading color={'#FFF'} as={'h3'} size={'md'}
+          <Heading color={'#FFF'} as={'h1'} size={'lg'} style={{ fontSize: 52 }}>JudiMap</Heading>
+          {/* <Heading color={'#FFF'} as={'h3'} size={'md'}
             className={`text-primary ${coverStyle.typewrite}`}
             data-period={'5000'}
             data-type={'[ "Le souci d’un justiciable bien informé.", "La nouvelle plateforme d’information et d’orientation juridique au Sénégal.", "Le bon droit influence alors l’instauration d’un bon ordre social." ]'}>
             <span className={'wrap'}></span>
-          </Heading>
-          {/* <Heading color={'#FFF'} as={'h3'} size={'md'}>
-            "La nouvelle plateforme d’information et d’orientation juridique au Sénégal."
           </Heading> */}
+          <Heading color={'#FFF'} as={'h3'} className={`text-primary fade-in`} size={'md'}>
+            La nouvelle plateforme d’information et d’orientation juridique au Sénégal.
+          </Heading>
+
+          <a className={coverStyle.ctaButton} onClick={() => window.scrollTo({ top: 600, behavior: 'smooth' })}>Découvrir</a>
         </Flex>
       </div>
 

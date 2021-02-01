@@ -16,12 +16,12 @@ import { Container } from 'react-bootstrap';
 
 const DesktopDownloadDisplay = () => {
   return (
-    <Container fluid className={'px-5'}>
-      <Flex w={'100%'} direction={'column'} className={'pt-5'}>
+    <Container fluid className={'px-5 pb-5'}>
+      <Flex w={'100%'} direction={'column'} className={'py-5 mb-5'}>
         <Heading textAlign={['center']} fontSize={'4xl'} className={'pb-4'}>
           Download our app
         </Heading>
-        <Flex>
+        <Flex className={'mb-4'}>
           <div data-aos={'fade-up'}>
             <Flex direction={'column'}>
               <Box >
@@ -68,14 +68,15 @@ const DesktopDownloadDisplay = () => {
             </Flex>
           </div>
 
-          <div data-aos={'fade-down'} style={{ width: '50%' }}>
-            <Stack className={downloadStyle.inner}>
-              <Img
-                height={400}
-                alt={'Device'}
-                src={'/mobile_mockup.png'}
-              />
-            </Stack>
+          <div className={'position-relative'} data-aos={'fade-down'} style={{ width: '50%', }}>
+            <Img
+              height={400}
+              alt={'Device'}
+              src={'/mobile_mockup.png'}
+              pos={'absolute'}
+              top={-20}
+              right={20}
+            />
           </div>
         </Flex>
       </Flex>

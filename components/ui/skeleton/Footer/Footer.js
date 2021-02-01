@@ -8,7 +8,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        JudiMap Made with ❤️ by
+        ©2021 JudiMap | Crafted By
         {' '}
         @LPIX-11
       </a>

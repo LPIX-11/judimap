@@ -32,6 +32,25 @@
   animation: blinkTextCursor 500ms steps(44) infinite normal;
 }
 
+.ctaButton {
+  color: #fff;
+  border: 1px solid #ccc;
+  padding-left: 17px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 17px;
+  font-size: 12pt;
+  border-radius: 5px;
+  margin-top: 1em;
+}
+
+.ctaButton:hover {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
 
 @keyframes blinkTextCursor {
   from {

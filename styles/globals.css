@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'Amsterdam';
-  src: local('Amsterdam-ZVGqm'), url('../public/fonts/amsterdam/Amsterdam-ZVGqm.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Poppins';
   src: local('Poppins-Light'), url('../public/fonts/Poppins/Poppins-Light.ttf') format('truetype');
 }

@@ -65,12 +65,12 @@ export default function MobileInfoCardListView() {
       </div>
 
       <div className={'keen-slider__slide'}>
-        <InfoCard title={'Ce qu’on fait'} image={'pexels-cottonbro-5081971.jpg'} description={`
+        <InfoCard title={'Ce qu’on fait'} image={'young_girl.webp'} description={`
               -Nous informons et orientons la population sur leurs droits et obligations, et sur  l’actualité juridique au Sénégal.
               -Conseil et assistance aux entrepreneurs dans la formalisation de leurs activités et aux entreprises étrangères dans le processus d’investissement et d’implantation au Sénégal.`} />
       </div>
       <div className={'keen-slider__slide'}>
-        <InfoCard title={'Notre Cible ?'} image={'/black_men.jpg'} description={`Population sénégalaise
+        <InfoCard title={'Notre Cible ?'} image={'/black_men.webp'} description={`Population sénégalaise
               Entrepreneurs
               Entreprises
               Agents de justice

@@ -8,7 +8,7 @@ import { LINKEDIN, MAIL, TWITTER, WHATSAPP } from '../../../../src/functions/Con
 export default function DesktopContactsView() {
   return (
     <Flex justify={'space-evenly'} paddingBottom={30}>
-      <a href={LINKEDIN} target={'_blank'} style={{ cursor: 'pointer' }} >
+      <a href={LINKEDIN} target={'_blank'} style={{ cursor: 'pointer' }} rel="noopener">
         <ImLinkedin size={30} color={'#0a66c2'} />
       </a>
       <a href={MAIL}>
@@ -17,7 +17,7 @@ export default function DesktopContactsView() {
       <a href={WHATSAPP}>
         <ImWhatsapp size={30} color={'#27d246'} />
       </a>
-      <a href={TWITTER} target="_blank">
+      <a href={TWITTER} target="_blank" style={{ cursor: 'pointer' }} rel="noopener">
         <VscTwitter size={30} color={'#1da1f2'} />
       </a>
     </Flex>

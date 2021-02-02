@@ -72,7 +72,7 @@ const DesktopDownloadDisplay = () => {
             <Img
               height={400}
               alt={'Device'}
-              src={'/mobile_mockup.png'}
+              src={'/mobile_mockup.webp'}
               pos={'absolute'}
               top={-20}
               right={20}

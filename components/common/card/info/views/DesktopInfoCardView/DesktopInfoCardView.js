@@ -1,11 +1,11 @@
 import { Image } from '@chakra-ui/react';
 import infoCardStyle from './DesktopInfoCardView.module.scss';
 
-export default function DesktopInfoCardView({ title, description, image = 'black_woman.jpg' }) {
+export default function DesktopInfoCardView({ title, description, image = 'black_woman.webp' }) {
   return (
     <div className={infoCardStyle.card}>
       <div className={infoCardStyle.card__image_container}>
-        <Image className={`${infoCardStyle.img} ${infoCardStyle.card__image}`} src={image} alt="" />
+        <Image className={`${infoCardStyle.img} ${infoCardStyle.card__image}`} src={image} alt={title} />
       </div>
 
       <svg className={infoCardStyle.card__svg} viewBox="0 0 800 500" style={{ opacity: .9 }}>

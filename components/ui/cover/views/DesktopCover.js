@@ -19,7 +19,7 @@ export default function DesktopCoverView() {
       </div>
 
       <div className={coverStyle.right}>
-        <Image src={'/young_girl.webp'} height={'100vh'} width={'100%'} pos={'absolute'} zIndex={-2} right={-10} alt={'Cover'} />
+        <Image src={'/young_girl.webp'} height={'100vh'} width={'100%'} pos={'absolute'} zIndex={-2} right={-10} alt={'Cover'} loading={'lazy'} />
       </div>
       <div className={'bg-dark position-absolute'} style={{ height: '80vh', width: '100%', opacity: .3 }}></div>
       <Flex className={'position-absolute w-100'} bottom={10} align={'center'} justify={'center'} zIndex={300}>

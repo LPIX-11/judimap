@@ -30,7 +30,7 @@ export default function BottomSection() {
       <Media lessThan={'lg'}>
         <div data-aos={'zoom-out-down'}>
           <Card border={'warning'} style={{ width: '100%' }}>
-            <Card.Img variant={'top'} src={'/black_lawyer.webp'} />
+            <Card.Img variant={'top'} src={'/black_lawyer.webp'} alt="Card image" loading={'lazy'} />
             <Card.Body>
               <Card.Title as={'h3'} style={{ color: 'purple' }}>Notre Stratégie</Card.Title>
               <Card.Text>

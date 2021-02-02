@@ -6,7 +6,7 @@ export default function MobileCoverView() {
     <Flex className={'position-relative'} direction={'column'} w={'100%'} h={'30vh'} align={'center'} justify={'center'}>
       <div className={'bg-dark position-absolute'} style={{ height: '30vh', width: '100%', opacity: .6 }}></div>
 
-      <Image src={'/black_woman_min.webp'} height={'100%'} width={'100%'} pos={'absolute'} zIndex={-2} alt={'Cover'} />
+      <Image src={'/black_woman_min.webp'} height={'100%'} width={'100%'} pos={'absolute'} zIndex={-2} alt={'Cover'} loading={'lazy'} />
 
       <Flex className={'position-relative container-fluid'} direction={'column'} w={'100%'} h={'100vh'} bg={'transparent'} align={'start'} justify={'center'}>
         <Heading color={'#FFF'} size={'lg'}>JudiMap</Heading>

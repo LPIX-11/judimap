@@ -4,8 +4,6 @@ import infoCardStyle from './MobileInfoCardView.module.css';
 export default function MobileInfoCardView({ title, description, image }) {
   return (
     <div className={infoCardStyle.card}>
-      {/* <div className={infoCardStyle.imgAvatar}>
-      </div> */}
       <div className={infoCardStyle.gradiantCircle}></div>
       <Flex direction={'column'}>
         <Flex justify={'center'}>

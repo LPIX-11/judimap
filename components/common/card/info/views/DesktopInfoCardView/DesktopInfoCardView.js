@@ -5,7 +5,7 @@ export default function DesktopInfoCardView({ title, description, image = 'black
   return (
     <div className={infoCardStyle.card}>
       <div className={infoCardStyle.card__image_container}>
-        <Image className={`${infoCardStyle.img} ${infoCardStyle.card__image}`} src={image} alt={title} />
+        <Image className={`${infoCardStyle.img} ${infoCardStyle.card__image}`} src={image} alt={title} loading={'lazy'} />
       </div>
 
       <svg className={infoCardStyle.card__svg} viewBox="0 0 800 500" style={{ opacity: .9 }}>

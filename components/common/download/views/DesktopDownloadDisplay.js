@@ -76,6 +76,7 @@ const DesktopDownloadDisplay = () => {
               pos={'absolute'}
               top={-20}
               right={20}
+              loading={'lazy'}
             />
           </div>
         </Flex>

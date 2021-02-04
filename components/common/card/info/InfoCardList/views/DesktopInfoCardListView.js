@@ -1,6 +1,5 @@
 import { Flex } from "@chakra-ui/react";
-import dynamic from 'next/dynamic'
-const InfoCard = dynamic(() => import('../../InfoCard'))
+import InfoCard from '../../InfoCard';
 
 export default function DesktopInfoCardListView() {
   return (

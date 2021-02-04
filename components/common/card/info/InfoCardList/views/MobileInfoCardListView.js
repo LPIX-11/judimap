@@ -1,6 +1,3 @@
-import { Flex } from "@chakra-ui/react";
-import dynamic from 'next/dynamic'
-
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css'
 

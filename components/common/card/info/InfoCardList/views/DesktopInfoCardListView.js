@@ -3,7 +3,7 @@ import InfoCard from '../../InfoCard';
 
 export default function DesktopInfoCardListView() {
   return (
-    <div className={'w-100 pl-5'} data-aos={'fade-up'}>
+    <div className={'w-100 px-5'} data-aos={'fade-up'}>
       <Flex className={'pt-4 w-100'} justify={'space-between'}>
         <InfoCard title={'Qui sommes nous ?'} description={'La première plateforme digitale dédiée à l’information juridique et administrative au Sénégal pour pallier au manque de connaissances juridiques de bases qui devraient être la feuille de route de tout bon citoyens.'} />
 

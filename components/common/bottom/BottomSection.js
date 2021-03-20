@@ -1,4 +1,4 @@
-import { Flex, Heading, Text } from '@chakra-ui/react';
+import { Flex, Heading, Text, List, ListItem, ListIcon, OrderedList, UnorderedList } from '@chakra-ui/react';
 import { Card, Container, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Media, MediaContextProvider } from '../../../src/utils/Media';
 
@@ -16,13 +16,23 @@ export default function BottomSection() {
             <div className={' pl-3'} data-aos={'fade-left'}>
               <Heading as={'h3'} color={'purple'}>Notre Stratégie</Heading>
               <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                A travers notre équipe composée de juristes spécialisés dans tous les domaines du droit et les démarches administratives ; et des experts dans le domaine de l’entrepreneuriat et du développement de PME, nous vous garantissons :
               </Text>
+              <UnorderedList>
+                <ListItem>Une assistance et des conseils juridiques sur mesure</ListItem>
+                <ListItem>Une réponse rapide, fiable et opérationnelle à toutes vos questions juridiques</ListItem>
+                <ListItem>Un accompagnement dans les procédures administratives.</ListItem>
+              </UnorderedList>
+
               <Text>
-                A travers le service de LINKING que nous proposons, nous  permettons aux justiciables de trouver facilement des agents de justice spécialisés (avocats, notaire, huissier…) pour les assistés dans certaines démarches.
-                Nous équipe est jeune, qualifiée et très à l’écoute. Elle s’adapte au besoin particulier et permanent de chaque client.
+                Dès réception de votre demande, un de nos collaborateur  :
               </Text>
+              <UnorderedList>
+                <ListItem>Vous rappelle dans un délai de 24 h pour recueillir plus d’informations</ListItem>
+                <ListItem>Vous fixe un rendez-vous en présentielle ou en ligne</ListItem>
+                <ListItem> Fait une analyse de votre demande et une proposition financière</ListItem>
+                <ListItem> Établit un compte rendu et, vous mets en rapport avec un spécialiste qui se chargera de traiter votre demande dans les plus brefs délais.</ListItem>
+              </UnorderedList>
             </div>
           </Flex>
         </Container>
@@ -30,23 +40,26 @@ export default function BottomSection() {
       <Media lessThan={'lg'}>
         <div data-aos={'zoom-out-down'}>
           <Card border={'warning'} style={{ width: '100%' }}>
-            <Card.Img variant={'top'} src={'/black_lawyer.webp'} alt="Card image" loading={'lazy'} />
+            <Card.Img variant={'top'} src={'/strat.jpeg'} alt="Card image" loading={'lazy'} />
             <Card.Body>
               <Card.Title as={'h3'} style={{ color: 'purple' }}>Notre Stratégie</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </Card.Text>
+                A travers notre équipe composée de juristes spécialisés dans tous les domaines du droit et les démarches administratives ; et des experts dans le domaine de l’entrepreneuriat et du développement de PME, nous vous garantissons :
+              </Card.Text>
             </Card.Body>
             <ListGroup className={'list-group-flush'}>
-              <ListGroupItem>Cras justo odio</ListGroupItem>
-              <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
-              <ListGroupItem>Vestibulum at eros</ListGroupItem>
+              <ListGroupItem>Une assistance et des conseils juridiques sur mesure</ListGroupItem>
+              <ListGroupItem>Une réponse rapide, fiable et opérationnelle à toutes vos questions juridiques</ListGroupItem>
+              <ListGroupItem>Un accompagnement dans les procédures administratives.</ListGroupItem>
             </ListGroup>
             <Card.Body>
-              <Card.Link href={'#'}>Card Link</Card.Link>
-              <Card.Link href={'#'}>Another Link</Card.Link>
+              Dès réception de votre demande, un de nos collaborateur  :
+              <UnorderedList px={0}>
+                <ListItem>Vous rappelle dans un délai de 24 h pour recueillir plus d’informations</ListItem>
+                <ListItem>Vous fixe un rendez-vous en présentielle ou en ligne</ListItem>
+                <ListItem> Fait une analyse de votre demande et une proposition financière</ListItem>
+                <ListItem> Établit un compte rendu et, vous mets en rapport avec un spécialiste qui se chargera de traiter votre demande dans les plus brefs délais.</ListItem>
+              </UnorderedList>
             </Card.Body>
           </Card>
         </div>

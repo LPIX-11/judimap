@@ -8,7 +8,7 @@ export default function Card3D({ right, title, description }) {
         <div className={right ? card3Dtyle.innerAlt : card3Dtyle.inner}>
           <Card className="bg-dark text-white border-0">
             <div className={'bg-dark position-absolute'} style={{ height: '100%', width: '100%', opacity: .4 }}></div>
-            <Card.Img src="/black_lawyer.webp" alt="Card image" loading={'lazy'} />
+            <Card.Img src="/strat.jpeg" alt="Card image" loading={'lazy'} />
             <Card.ImgOverlay>
               <Card.Text>JudiMap Orientation</Card.Text>
             </Card.ImgOverlay>

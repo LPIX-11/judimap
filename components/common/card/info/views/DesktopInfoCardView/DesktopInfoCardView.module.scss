@@ -15,7 +15,7 @@
   position: relative;
   background: #333;
   width: 400px;
-  height: 580px;
+  height: 530px;
   border-radius: 6px;
   padding: 2rem;
   color: #aaa;
@@ -24,7 +24,7 @@
   overflow: hidden;
   
   &__image_container {
-    margin: -5rem -2rem 1rem -2rem;
+    margin: -2.3rem -2rem 0 -2rem;
   }
   
   &__line {
@@ -58,7 +58,7 @@
   &__svg {
     position: absolute;
     left: 0;
-    top: 115px;
+    top: 59px;
     width: 101%;
   }
 }
